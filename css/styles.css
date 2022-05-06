@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: inherit; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif; }
+
+button {
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../images/pattern-background-mobile.svg), #e0e8ff;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 480px) {
+    .container {
+      background: url(../images/pattern-background-desktop.svg), #e0e8ff;
+      background-repeat: no-repeat;
+      object-fit: contain;
+      height: 100%;
+      background-size: contain;
+      align-items: center; } }
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 33rem;
+  height: 52rem;
+  margin-top: 28rem;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 676px) {
+    .card {
+      max-width: 37rem;
+      height: 550px; } }
+  @media screen and (min-width: 1170px) {
+    .card {
+      margin-top: 2rem; } }
+  .card__hero--img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem; }
+  .card__summary {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .card__summary h2 {
+      margin-top: 2.5rem;
+      color: #1f2f56;
+      font-weight: 800; }
+    .card__summary h3 {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 70%;
+      line-height: 1.5;
+      color: #7280a7;
+      font-weight: 500; }
+    .card__summary--plan {
+      margin-top: 2rem;
+      background-color: #f5f7ff;
+      width: 26.5rem;
+      height: 8rem;
+      padding: 0 1rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .card__summary--plan div {
+        display: flex;
+        align-items: center; }
+        .card__summary--plan div img {
+          width: 5rem;
+          margin: 0 1rem; }
+        .card__summary--plan div h4 {
+          color: #1f2f56;
+          font-weight: 900;
+          font-size: 1.2rem; }
+          .card__summary--plan div h4 span {
+            font-weight: 500; }
+      .card__summary--plan a {
+        font-size: 1.2rem;
+        color: #3829e0;
+        font-weight: 900;
+        transition: all 0.2s; }
+        .card__summary--plan a:hover {
+          color: #756bf1;
+          text-decoration: none; }
+    .card__summary--btn-payment {
+      padding: 1.5rem 7rem;
+      color: #f1f1f1;
+      border-radius: 1rem;
+      background-color: #3829e0;
+      font-weight: 700;
+      font-size: 1.2rem;
+      box-shadow: 0 1em 1em #dcd9f8;
+      transition: all 0.2s; }
+      .card__summary--btn-payment:hover {
+        background-color: #756bf1; }
+    .card__summary--btn-cancel {
+      color: #7280a7;
+      background-color: transparent;
+      font-weight: 800;
+      font-size: 1.2rem;
+      display: inline-block;
+      transition: all 0.2s; }
+      .card__summary--btn-cancel:hover {
+        color: #1f2f56; }

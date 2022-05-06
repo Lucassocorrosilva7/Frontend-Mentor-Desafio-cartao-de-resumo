@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+$primary-pale-blue: hsl(225, 100%, 94%);
+$secondary-bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$vark-blue: hsl(223, 47%, 23%);
+$Fsize: 1.6rem;
+$Ffamily: 'Red Hat Display', sans-serif;
+$transition: all .2s;
+
+* {
+    box-sizing: inherit;
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $Fsize;
+    font-family: $Ffamily;
+}
+
+button{
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/pattern-background-mobile.svg), $primary-pale-blue;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 480px) {
+    background: url(../images/pattern-background-desktop.svg), $primary-pale-blue;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 100%;
+    background-size: contain;
+    align-items: center;
+    }
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 33rem;
+    height: 52rem;
+    margin-top: 28rem;
+    display: flex;
+    flex-direction: column;
+
+  
+
+    @media screen and (min-width: 676px) {
+        max-width: 37rem;
+        height: 550px;
+       
+    }
+
+
+    @media screen and (min-width: 1170px) {
+     margin-top: 2rem;
+    }
+  
+
+
+    &__hero{
+
+        &--img{
+            width: 100%;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+    }
+
+    &__summary{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2{
+            margin-top: 2.5rem;
+            color: $vark-blue;
+            font-weight: 800;
+        }
+
+        h3{
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            text-align: center;
+            width: 70%;
+            line-height: 1.5;
+            color: $desaturated-blue;
+            font-weight: 500;
+        }
+
+        &--plan{
+            margin-top: 2rem;
+            background-color: $very-pale-blue;
+            width: 26.5rem;
+            height: 8rem;
+            padding: 0 1rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div{
+                display: flex;
+                align-items: center;
+               
+                img{
+                    width: 5rem;
+                    margin: 0 1rem;
+                   
+                }
+
+                h4{
+                    color: $vark-blue;
+                    font-weight: 900;
+                    font-size: 1.2rem;
+
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            a{
+                font-size: 1.2rem;
+                color: $secondary-bright-blue;
+                font-weight: 900;
+
+                transition: $transition;
+
+            &:hover{
+                color:   #756bf1;
+                text-decoration: none;
+            }
+            }
+            
+        }
+
+        &--btn-payment{
+            padding: 1.5rem 7rem;
+            color: #f1f1f1;
+            border-radius: 1rem;
+            background-color: $secondary-bright-blue;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 1em 1em rgba(220,217,248,15);
+            transition: $transition;
+
+            &:hover{
+                background-color:   #756bf1;
+            }
+         }
+
+         &--btn-cancel{
+             color: $desaturated-blue;
+             background-color: transparent;
+             font-weight: 800;
+             font-size: 1.2rem;
+             display: inline-block;
+             transition: $transition;
+    
+
+             &:hover{
+                 color: $vark-blue;
+             }
+         }
+    
+        
+    }
+
+    
+}
