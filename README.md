@@ -9,6 +9,8 @@ O  desafio consiste em construir de cartão de resumo e pedido e fazê-lo o mais
 ## Layout
 É possivel visualizar todos os layouts(Desktop e Mobile) da aplicação no diretorio ./design
 
+
+
 ## Tecnologias Utilizadas
 
 - HTML5
@@ -19,13 +21,13 @@ O  desafio consiste em construir de cartão de resumo e pedido e fazê-lo o mais
 - Responsividade
 - NETLIFY
 
-Para realizar o deploy da minha aplicação, utilizei uma plataforma gratuita de hospedagem de sites estáticos chamada Netlify
-
 ## Instalação de pacote & compilando Sass
 npm install node-sass
 <br>
 npm run compile:sass
 
+## Deploy
+Para realizar o deploy da minha aplicação, utilizei uma plataforma gratuita de hospedagem de sites estáticos chamada Netlify
 
 Clique <a href="https://desafio-cartao-de-resumo.netlify.app/" target="_blank">aqui</a> para visualizar minha aplicação 🚀
 
