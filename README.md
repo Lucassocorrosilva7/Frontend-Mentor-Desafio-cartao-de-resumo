@@ -21,6 +21,11 @@ O  desafio consiste em construir de cartão de resumo e pedido e fazê-lo o mais
 
 Para realizar o deploy da minha aplicação, utilizei uma plataforma gratuita de hospedagem de sites estáticos chamada Netlify
 
+## Instalação de pacote & compilando Sass
+npm install node-sass
+<br>
+npm run compile:sass
+
 
 Clique <a href="https://desafio-cartao-de-resumo.netlify.app/" target="_blank">aqui</a> para visualizar minha aplicação 🚀
 
