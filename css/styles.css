@@ -46,7 +46,7 @@ button {
   width: 100%;
   max-width: 33rem;
   height: 52rem;
-  margin-top: 28rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column; }
   @media screen and (min-width: 676px) {
@@ -92,11 +92,11 @@ button {
         .card__summary--plan div img {
           width: 5rem;
           margin: 0 1rem; }
-        .card__summary--plan div h6 {
+        .card__summary--plan div h3 {
           color: #1f2f56;
           font-weight: 900;
           font-size: 1.2rem; }
-          .card__summary--plan div h6 span {
+          .card__summary--plan div h3 span {
             font-weight: 500; }
       .card__summary--plan a {
         font-size: 1.2rem;
