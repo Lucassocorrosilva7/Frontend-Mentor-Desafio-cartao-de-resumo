@@ -26,6 +26,7 @@ npm install node-sass
 <br>
 npm run compile:sass
 
+## Deploy
 Para realizar o deploy da minha aplicação, utilizei uma plataforma gratuita de hospedagem de sites estáticos chamada Netlify
 
 Clique <a href="https://desafio-cartao-de-resumo.netlify.app/" target="_blank">aqui</a> para visualizar minha aplicação 🚀
