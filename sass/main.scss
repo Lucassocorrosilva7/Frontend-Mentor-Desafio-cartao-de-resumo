@@ -85,11 +85,11 @@ button{
 
     &__hero{
 
-        &--img{
+
             width: 100%;
             border-top-right-radius: 1rem;
             border-top-left-radius: 1rem;
-        }
+
     }
 
     &__summary{
@@ -103,7 +103,7 @@ button{
             font-weight: 800;
         }
 
-        h3{
+        h6{
             margin-top: 1.5rem;
             font-size: 1.2rem;
             text-align: center;

@@ -56,7 +56,7 @@ button {
   @media screen and (min-width: 1170px) {
     .card {
       margin-top: 2rem; } }
-  .card__hero--img {
+  .card__hero {
     width: 100%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem; }
@@ -68,7 +68,7 @@ button {
       margin-top: 2.5rem;
       color: #1f2f56;
       font-weight: 800; }
-    .card__summary h3 {
+    .card__summary h6 {
       margin-top: 1.5rem;
       font-size: 1.2rem;
       text-align: center;
